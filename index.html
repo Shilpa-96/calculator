@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="cal.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="container">
+        <form>
+            <h1>Calculator</h1>
+            <div>
+                <input type="text" id="display_box" >
+            </div>
+            <div>
+                <input type="button" value="(" onclick="insert('(')" style="color:blue">
+                <input type="button" value="AC" onclick="cl()" style="color:blue">
+                <input type="button" value="DE" onclick="del()" style="color:blue">
+                <input type="button" value=")" onclick="insert(')')" style="color:blue">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="insert(7)">
+                <input type="button" value="8" onclick="insert(8)">
+                <input type="button" value="9" onclick="insert(9)">
+                <input type="button" value="X" onclick="insert('*')" style="color:blue">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="insert(4)">
+                <input type="button" value="5" onclick="insert(5)">
+                <input type="button" value="6" onclick="insert(6)">
+                <input type="button" value="/" onclick="insert('/')" style="color:blue">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="insert(1)">
+                <input type="button" value="2" onclick="insert(2)">
+                <input type="button" value="3" onclick="insert(3)">
+                <input type="button" value="+" onclick="insert('+')" style="color:blue">
+            </div>
+            <div>
+                <input type="button" value="^" onclick="insert('**')">
+                <input type="button" value="%" onclick="insert('%')">
+                <input type="button" value="-" onclick="insert('-')">
+                <input type="button" value="." onclick="insert('.')" style="color:blue">
+            </div>
+            <div>
+                <input type="button" value="0" onclick="insert(0)" style="border-radius: 30px; width: 40%; height: 50px">
+                <input type="button" value="=" onclick="eql()" style="background-color:blue; color: white; border-radius: 30px; width: 40%;height: 50px">
+            </div>
+        </form>
+    </div>
+    <script src="cal.js" ></script>
+</body>
+</html>
